@@ -1,17 +1,17 @@
 from setuptools import setup, find_packages
 
 setup(
-    name = 'command-safe',
+    name = 'timed-alert',
     version = '0.1',
     packages = find_packages(),
     include_package_data = True,
-    description = 'A simple way to save and recall commands with short aliases.',
-    long_description = 'Command Safe is a great tool when you find yourself commonly typing the same long commands. Why not save those commands to a short and convenient alias that you can recall at any time!',
-    url='https://github.com/omar-ozgur/Command-Safe',
+    description = 'Set quick alerts at timed intervals',
+    long_description = 'Do you ever wish that you could effortlessly set repeating alerts on your computer? The "timed-alert" or "tal" command lets you do just that!',
+    url = 'https://github.com/omar-ozgur/Timed-Alert',
     author = 'Omar Ozgur',
     author_email = 'oozgur217@gmail.com',
     license = 'MIT',
-    keywords = ['command', 'line', 'command-line', 'safe', 'save', 'alias'],
+    keywords = ['timed', 'alert', 'timed-alert', 'timer', 'sound', 'noise', 'repeating', 'intervals', 'command-line', 'python'],
     classifiers = [
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
@@ -29,7 +29,7 @@ setup(
     ],
     entry_points = '''
         [console_scripts]
-        csa = command_safe.main:csa
-        command-safe = command_safe.main:csa
+        tal = timed_alert.main:tal
+        timed-alert = timed_alert.main:tal
     ''',
 )
